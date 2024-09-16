@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { DataArticles } from "../../../../../public/Database/Dummy";
 import slugify from "@/app/helper/slugify";
+import Head from "next/head";
 
 
 export default function ArticleDetailPage() {
@@ -36,6 +37,14 @@ export default function ArticleDetailPage() {
 
     return (
         <>
+            <Head>
+                <title>{article ? article.title : 'PT Wahyu Tatawasana'}</title>
+                <meta name="description" content={article ? article.exerpt : 'PT Wahyu Tatawasana'} />
+                <meta property="og:url" content={`https://www.wahyutatawasana.co.id/artikel/${slugify(article?.categories || '')}/${slugify(article?.title || '')}`} />
+                <meta property="og:title" content={`PT Wahyu Tatawasana - ${article ? article.title : 'Artikel Tidak Ditemukan'}`} />
+                <meta property="og:description" content={article ? article.exerpt : 'Deskripsi tidak tersedia'} />
+            </Head>
+
             <ArticleDetail data={article} />
         </>
     )

@@ -40,6 +40,14 @@ export default function ArtikelPage() {
   const displayedTrendArticles = filteredTrendArticles.slice(0, visibleCount);
   return (
     <>
+      <Head>
+        <title>PT Wahyu Tatawasana - Artikel</title>
+        <meta name="description" content="Temukan artikel menarik dari PT Wahyu Tatawasana." />
+        <meta property="og:url" content="https://www.wahyutatawasana.co.id/artikel" />
+        <meta property="og:title" content="PT Wahyu Tatawasana - Artikel" />
+        <meta property="og:description" content="Temukan artikel menarik dari PT Wahyu Tatawasana." />
+      </Head>
+
       <BannerArticle />
       <Highlight />
       <div className="space-y-5 mb-10">
