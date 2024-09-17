@@ -6,10 +6,14 @@ import { NavbarItems } from "../../public/Database/System";
 import { usePathname } from "next/navigation";
 import Logo from '../app/icon.png';
 import Image from "next/image";
+import { MegaMenuNavbar } from "./MegaMenuNavbar";
+import { IoMdMenu } from "react-icons/io";
+import { MobileDrawer } from "./MobileDrawer";
 
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(false);
     const path = usePathname()
     const isCategoryPage = path !== '/artikel' && path.split('/artikel').length > 1;
 
@@ -41,8 +45,10 @@ export const Navbar = () => {
                             src={Logo}
                             alt="pt wahyu tatawasana logo"
                             className={` ${isScrolled ? '-z-50' : 'brightness-[200] contrast-200 grayscale'} ease-in-out duration-300`}
-                             />
-                        PT Wahyu Tatawasana
+                        />
+                        <span className="md:block hidden">
+                            PT Wahyu Tatawasana
+                        </span>
                     </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -64,16 +70,31 @@ export const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end space-x-2">
                     <Link
                         href="kontak"
-                        className={`font-bold px-5 py-2 bg-white bg-opacity-20 rounded-lg
+                        className={`font-bold px-5 py-2 bg-white bg-opacity-20 rounded-lg backdrop-blur-md
                         ${isScrolled ? "!text-gray-800" : "text-white"} 
                         ${isCategoryPage ? "!text-gray-800" : ""} 
 
                         `}>
-                        Kontak & FAQ
+                        <span className="md:block hidden">
+                            Kontak & FAQ
+                        </span>
+                        <span className="block md:hidden">
+                            Kontak
+                        </span>
                     </Link>
+                        <MegaMenuNavbar
+                            icon={<IoMdMenu className='text-xl' />}
+                            iconClassName={'p-[9px] rounded-lg text-white bg-gray-200 bg-opacity-25 backdrop-blur-md hover:bg-opacity-100 hover:bg-mainColor hover:text-white duration-300 dark:hover:bg-secondaryColor '}
+                            arrowVisibility={'hidden'}
+                            children={
+                                <MobileDrawer />
+                            }
+                            isExpanded={isExpanded}
+                            setIsExpanded={setIsExpanded}
+                        />
                 </div>
             </div>
         </>
