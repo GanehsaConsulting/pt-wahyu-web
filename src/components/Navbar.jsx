@@ -57,7 +57,7 @@ export const Navbar = () => {
                         ${isCategoryPage ? "!text-gray-800" : ""} 
 
                     `}>
-                        {NavbarItems.main.map((el, idx) => (
+                        {NavbarItems.main.slice(0, 4).map((el, idx) => (
                             <>
                                 <li key={idx}>
                                     <Link
@@ -85,16 +85,16 @@ export const Navbar = () => {
                             Kontak
                         </span>
                     </Link>
-                        <MegaMenuNavbar
-                            icon={<IoMdMenu className='text-xl' />}
-                            iconClassName={'p-[9px] rounded-lg text-white bg-gray-200 bg-opacity-25 backdrop-blur-md hover:bg-opacity-100 hover:bg-mainColor hover:text-white duration-300 dark:hover:bg-secondaryColor '}
-                            arrowVisibility={'hidden'}
-                            children={
-                                <MobileDrawer />
-                            }
-                            isExpanded={isExpanded}
-                            setIsExpanded={setIsExpanded}
-                        />
+                    <MegaMenuNavbar
+                        icon={<IoMdMenu className='text-xl' />}
+                        iconClassName={`p-[9px] rounded-lg text-white bg-gray-200 bg-opacity-25 backdrop-blur-md hover:bg-opacity-100 hover:bg-mainColor hover:text-white duration-300 dark:hover:bg-secondaryColor  ${isScrolled ? "!text-gray-800" : "text-white"} ${isCategoryPage ? "!text-gray-800" : ""}`}
+                        arrowVisibility={'hidden'}
+                        children={
+                            <MobileDrawer />
+                        }
+                        isExpanded={isExpanded}
+                        setIsExpanded={setIsExpanded}
+                    />
                 </div>
             </div>
         </>

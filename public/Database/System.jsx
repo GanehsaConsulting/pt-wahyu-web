@@ -16,10 +16,10 @@ export const NavbarItems = {
             label: "Tentang Kami",
             href: "/tentang-kami"
         },
-        // {
-        //     label: "FAQ",
-        //     href: "/faq"
-        // },
+        {
+            label: "FAQ",
+            href: "/kontak"
+        },
     ]
 }
 
