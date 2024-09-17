@@ -32,7 +32,7 @@ export const Navbar = () => {
     return (
         <>
             <div className={`fixed navbar duration-300 ease-in-out transition-all z-[100]
-                ${isScrolled ? "bg-white bg-opacity-50 backdrop-blur-xl" : "bg-transparent"}
+                ${isScrolled && isExpanded !== true  ? "bg-white bg-opacity-50 backdrop-blur-xl" : "bg-transparent"}
                 `}>
                 <div className="navbar-start">
                     <a className={`btn btn-ghost text-xl
@@ -44,7 +44,7 @@ export const Navbar = () => {
                             height={40}
                             src={Logo}
                             alt="pt wahyu tatawasana logo"
-                            className={` ${isScrolled ? '-z-50' : 'brightness-[200] contrast-200 grayscale'} ease-in-out duration-300`}
+                            className={` ${isScrolled ? '' : 'brightness-[200] contrast-200 grayscale'} ease-in-out duration-300`}
                         />
                         <span className="md:block hidden">
                             PT Wahyu Tatawasana
