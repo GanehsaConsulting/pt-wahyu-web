@@ -10,7 +10,7 @@ export const MobileDrawer = () => {
                         <li key={link.href}>
                             <Link
                                 href={link.href}
-                                className={`flex flex-col items-start group duration-200 hover:bg-white px-3 py-1 rounded-full dark:hover:bg-mainColor hover:text-mainColor dark:text-white text-gray-800 dark:hover:text-baseColor`}
+                                className={`flex flex-col items-start w-full group duration-200 hover:bg-white px-3 py-1 rounded-full  hover:text-mainColor dark:text-white text-gray-800 dark:hover:text-baseColor`}
                                 aria-current="page"
                             >
                                 {link.label}
