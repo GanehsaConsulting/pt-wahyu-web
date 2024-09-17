@@ -4,7 +4,7 @@ import { Tag } from "./Tag"
 export const WhyUs = () => {
     return (
         <>
-            <section className="md:mx-24 mx-5 min-h-screen flex flex-col justify-center gap-5">
+            <section className="md:mx-24 mx-5 min-h-screen flex flex-col justify-center gap-5 py-10">
                 <div>
                     <Tag text={'apasaja'} />
                     <p className="text-4xl mt-2 mb-10">
