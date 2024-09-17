@@ -15,15 +15,16 @@ export const WhyUs = () => {
                     {dataWhyUs.map((el, idx) => (
                         <div
                             key={idx}
-                            className={`p-5 border border-thirdColor
+                            className={`p-5 border border-thirdColor text-mainColor
                                 ${idx === dataWhyUs.length - 1 ? "rounded-tr-[100px] bg-secondaryBase border-none md:w-[40%]" : "  md:w-[25%]"}
+                                ${idx === dataWhyUs.length - 2 ? "bg-mainColor !text-base !border-mainColor" : "  md:w-[25%]"}
                                 `}
                         >
-                            <div className="md:text-5xl text-3xl mb-[25lvh] text-mainColor">
+                            <div className="md:text-6xl text-5xl mb-[20lvh]">
                                 {el.icon}
                             </div>
                             <div className="space-y-2">
-                                <h1 className="font-semibold text-xl text-mainColor">
+                                <h1 className="font-semibold text-xl">
                                     {el.title}
                                 </h1>
                                 <h2>

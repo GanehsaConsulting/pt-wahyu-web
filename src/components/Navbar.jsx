@@ -74,6 +74,7 @@ export const Navbar = () => {
                     <Link
                         href="kontak"
                         className={`font-bold px-5 py-2 bg-white bg-opacity-20 rounded-lg backdrop-blur-md
+                        ${isExpanded ? "!text-white" : ""} 
                         ${isScrolled ? "!text-gray-800" : "text-white"} 
                         ${isCategoryPage ? "!text-gray-800" : ""} 
 
