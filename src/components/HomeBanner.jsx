@@ -22,7 +22,7 @@ export const HomeBanner = () => {
                     src={bannerImage}
                     alt={mainText}
                 />
-                <div className="absolute bottom-0 md:w-[50%] md:h-full h-fit border-r border-gray-200 border-opacity-30 flex items-end md:py-0 py-5 md:items-center bg-black bg-opacity-50 backdrop-blur-[10px] hover:backdrop-blur-0 origin-left duration-300 ease-in-out">
+                <div className="absolute bottom-0 md:w-[50%] md:h-full h-fit border-t md:border-t-0 md:border-r border-gray-200 border-opacity-30 flex items-end md:py-0 py-5 md:items-center bg-black bg-opacity-50 backdrop-blur-[10px] hover:backdrop-blur-0 origin-left duration-300 ease-in-out">
                     <div className="mx-5 space-y-5">
                         <h1 className="text-4xl md:text-5xl font-bold text-base">
                             {mainText}

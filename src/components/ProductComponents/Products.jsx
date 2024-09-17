@@ -7,16 +7,16 @@ export const Products = () => {
         <>
             <section className="bg-thirdColor py-20">
                 <div>
-                    <div className="flex items-center justify-between md:mx-24 mx-5">
+                    <div className="flex md:flex-row flex-col md:items-center justify-between md:mx-24 mx-5">
                         <div>
                             <Tag text={'jelajahi'} />
-                            <p className="text-4xl mt-2 mb-10">
+                            <p className="text-4xl mt-2 mb-5 md:mb-10">
                                 Seluruh Produk Laut Kami
                             </p>
                         </div>
                         <a
                             href="/produk"
-                            className="px-4 py-2 border border-mainColor text-mainColor rounded-full hover:bg-mainColor hover:text-base font-semibold hover:brightness-90 duration-300 text-sm"
+                            className="px-4 py-2 border border-mainColor w-fit text-mainColor rounded-full hover:bg-mainColor hover:text-base font-semibold hover:brightness-90 duration-300 text-xs md:text-sm"
                         >
                             Cek Semua
                         </a>
