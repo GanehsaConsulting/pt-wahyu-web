@@ -3,6 +3,7 @@ import { Montserrat, Raleway } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import Head from "next/head";
+import Link from "next/link";
 
 const montserrat = Raleway({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <Head>
-        <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
+        <Link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
       </Head>
       <body className={montserrat.className}>
         <Navbar />
