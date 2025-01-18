@@ -26,18 +26,18 @@ export default function ArtikelPage() {
     [...DataArticles.new, ...DataArticles.trend].some((item) => item.title === article.title)
   );
 
-  const filteredNewArticles = filteredArticles.filter((article) =>
-    DataArticles.new.some((item) => item.title === article.title)
-  );
+  // const filteredNewArticles = filteredArticles.filter((article) =>
+  //   DataArticles.new.some((item) => item.title === article.title)
+  // );
 
-  const filteredTrendArticles = filteredArticles.filter((article) =>
-    DataArticles.trend.some((item) => item.title === article.title)
-  );
+  // const filteredTrendArticles = filteredArticles.filter((article) =>
+  //   DataArticles.trend.some((item) => item.title === article.title)
+  // );
 
   // Determine the articles to display
   const displayedAllArticles = filteredAllArticles.slice(0, visibleCount);
-  const displayedNewArticles = filteredNewArticles.slice(0, visibleCount);
-  const displayedTrendArticles = filteredTrendArticles.slice(0, visibleCount);
+  // const displayedNewArticles = filteredNewArticles.slice(0, visibleCount);
+  // const displayedTrendArticles = filteredTrendArticles.slice(0, visibleCount);
   return (
     <>
       <Head>

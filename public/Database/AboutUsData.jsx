@@ -234,23 +234,29 @@ export const dataWhyUs = [
         description: "Kami memastikan setiap produk perikanan melewati seleksi ketat untuk menjaga kesegaran dan standar tertinggi."
     },
     {
-        icon: <LiaMagicSolid/>,
+        icon: <LiaMagicSolid />,
         title: "Tim Profesional",
         description: "Didukung oleh para ahli berpengalaman, kami memastikan setiap langkah produksi berjalan efisien."
     },
     {
-        icon: <LiaMapSolid/>,
+        icon: <LiaMapSolid />,
         title: "Jaringan Distribusi Luas",
         description: "Produk kami didistribusikan secara cepat dan tepat waktu, menjaga kesegaran hingga ke tangan Anda."
     },
     {
-        icon: <LiaSplotchSolid/>,
+        icon: <LiaSplotchSolid />,
         title: "Layanan Unggul",
         description: "Kami selalu siap dengan pelayanan responsif dan solutif untuk kebutuhan Anda."
     }
 ];
 
 export const DataContact = {
+    other: {
+        label: "Factory",
+        location: "Jalan Leuwinanggung Kebayunan, RT.001 - RW. 020, Kelurahan Tapos Kecamatan Tapos Kota Depok 16457",
+        link: "https://maps.app.goo.gl/oENpGKKkH6Z4Rb2Y6",
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126876.78183854748!2d106.8097029390625!3d-6.406955299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebb587d1a7f3%3A0x48f3c5cf4a994b2e!2sPT.%20TEMAN%20BUMI%20NIAGA!5e0!3m2!1sid!2sid!4v1722572130064!5m2!1sid!2sid"
+    },
     addressMain: {
         label: "Head Office",
         location: "Sahid Sudirman Centre, Jl. Jenderal Sudirman No.86 56th Floor, Karet Tengsin, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220",
@@ -287,23 +293,23 @@ export const DataContact = {
 
 export const DataFAQ = [
     {
-      question: "Produk perikanan apa saja yang Anda sediakan?",
-      answer: "Kami menawarkan produk perikanan yang diambil dari sumber berkelanjutan, termasuk ikan, udang, dan berbagai jenis hasil laut lainnya."
+        question: "Produk perikanan apa saja yang Anda sediakan?",
+        answer: "Kami menawarkan produk perikanan yang diambil dari sumber berkelanjutan, termasuk ikan, udang, dan berbagai jenis hasil laut lainnya."
     },
     {
-      question: "Bagaimana PT Wahyu Tatawasana memastikan praktik keberlanjutan?",
-      answer: "Kami bekerja sama dengan komunitas lokal dan nelayan yang menjalankan praktik ramah lingkungan untuk menjaga kelestarian laut."
+        question: "Bagaimana PT Wahyu Tatawasana memastikan praktik keberlanjutan?",
+        answer: "Kami bekerja sama dengan komunitas lokal dan nelayan yang menjalankan praktik ramah lingkungan untuk menjaga kelestarian laut."
     },
     {
-      question: "Apakah produk yang disediakan ramah lingkungan?",
-      answer: "Semua produk kami berasal dari sumber yang berkelanjutan dan diolah sesuai dengan standar lingkungan yang ketat."
+        question: "Apakah produk yang disediakan ramah lingkungan?",
+        answer: "Semua produk kami berasal dari sumber yang berkelanjutan dan diolah sesuai dengan standar lingkungan yang ketat."
     },
     {
-      question: "Bagaimana cara memesan dalam jumlah besar?",
-      answer: "Hubungi tim kami melalui halaman “Kontak Kami” untuk mendiskusikan kebutuhan pemesanan Anda. Kami akan memastikan setiap langkah berjalan lancar."
+        question: "Bagaimana cara memesan dalam jumlah besar?",
+        answer: "Hubungi tim kami melalui halaman “Kontak Kami” untuk mendiskusikan kebutuhan pemesanan Anda. Kami akan memastikan setiap langkah berjalan lancar."
     },
     {
-      question: "Mengapa memilih produk dari PT Wahyu Tatawasana?",
-      answer: "Selain kualitas tinggi dan kesegaran produk, kami berkomitmen untuk menjaga lingkungan laut yang berkelanjutan dalam setiap aspek operasional kami."
+        question: "Mengapa memilih produk dari PT Wahyu Tatawasana?",
+        answer: "Selain kualitas tinggi dan kesegaran produk, kami berkomitmen untuk menjaga lingkungan laut yang berkelanjutan dalam setiap aspek operasional kami."
     }
-  ];
+];

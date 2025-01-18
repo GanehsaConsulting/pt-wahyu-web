@@ -15,11 +15,11 @@ export const ListContact = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                         />
                     </div>
-                  
-                   
+
+
                 </div>
                 <div className="md:w-[40%] p-5 border border-secondaryColor space-y-3">
-                <div className="duration-300 hover:shadow-secondaryShadow space-y-2 p-5 grow h-auto bg-mainColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
+                    <div className="duration-300 hover:shadow-secondaryShadow space-y-2 p-5 grow h-auto bg-mainColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
                         <h1 className="font-semibold text-xl text-base z-20">
                             {DataContact.addressMain.label}
                         </h1>
@@ -27,27 +27,38 @@ export const ListContact = () => {
                             {DataContact.addressMain.location}
                         </h2>
                     </div>
-                    <a
-                        href={DataContact.contact.link}
-                        className="grow duration-300 hover:shadow-secondaryShadow space-y-2 p-5 bg-thirdColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
-                        <h1 className="font-semibold text-mainColor z-20">
-                            {DataContact.contact.name}
+                    <div className="duration-300 hover:shadow-secondaryShadow space-y-2 p-5 grow h-auto bg-mainColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
+                        <h1 className="font-semibold text-xl text-base z-20">
+                            {DataContact.other.label}
                         </h1>
-                        <h2 className="z-20">
-                            {DataContact.contact.data}
+                        <h2 className="z-20 text-base">
+                            {DataContact.other.location}
                         </h2>
-                    </a>
-                    <a
-                        href={DataContact.contactMarketing.link}
-                        className="grow duration-300 hover:shadow-secondaryShadow space-y-2 p-5 bg-thirdColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
-                        <h1 className="font-semibold text-mainColor z-20">
-                            {DataContact.contactMarketing.name}
-                        </h1>
-                        <h2 className="z-20">
-                            {DataContact.contactMarketing.data}
-                        </h2>
-                    </a>
+                    </div>
+                    <div className="flex md:flex-row flex-col gap-5">
+                        <a
+                            href={DataContact.contact.link}
+                            className="grow duration-300 hover:shadow-secondaryShadow space-y-2 p-5 bg-thirdColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
+                            <h1 className="font-semibold text-mainColor z-20">
+                                {DataContact.contact.name}
+                            </h1>
+                            <h2 className="z-20">
+                                {DataContact.contact.data}
+                            </h2>
+                        </a>
+                        <a
+                            href={DataContact.contactMarketing.link}
+                            className="grow duration-300 hover:shadow-secondaryShadow space-y-2 p-5 bg-thirdColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
+                            <h1 className="font-semibold text-mainColor z-20">
+                                {DataContact.contactMarketing.name}
+                            </h1>
+                            <h2 className="z-20">
+                                {DataContact.contactMarketing.data}
+                            </h2>
+                        </a>
+                    </div>
                 </div>
+
             </section>
         </>
     )

@@ -79,12 +79,21 @@ export const Footer = () => {
                         </div>
                     </nav>
                     <div className="md:w-[30%] order-first md:order-none">
-                        <div>
-                            <p className="text-3xl font-light uppercase mb-5 md:mb-10 text-secondaryColor">
+                        <div className="space-y-5">
+                            <p className="text-3xl font-light uppercase mb-5 md:mb-5 text-secondaryColor">
                                 PT Wahyu Tatawasana
                             </p>
                             <p className="text-sm">
+                                <span className="text-xs uppercase text-mainColor tracking-wider font-medium opacity-60">
+                                    {DataContact.addressMain.label}
+                                </span> <br />
                                 {DataContact.addressMain.location}
+                            </p>
+                            <p className="text-sm">
+                                <span className="text-xs uppercase text-mainColor tracking-wider font-medium opacity-60">
+                                    {DataContact.other.label}
+                                </span> <br />
+                                {DataContact.other.location}
                             </p>
                         </div>
                     </div>
