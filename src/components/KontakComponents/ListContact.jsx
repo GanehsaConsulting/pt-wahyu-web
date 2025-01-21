@@ -46,7 +46,7 @@ export const ListContact = () => {
                                 {DataContact.contact.data}
                             </h2>
                         </a>
-                        <a
+                        {/* <a
                             href={DataContact.contactMarketing.link}
                             className="grow duration-300 hover:shadow-secondaryShadow space-y-2 p-5 bg-thirdColor bg-opacity-70 w-full backdrop-blur-xl z-20 relative flex flex-col ">
                             <h1 className="font-semibold text-mainColor z-20">
@@ -55,7 +55,7 @@ export const ListContact = () => {
                             <h2 className="z-20">
                                 {DataContact.contactMarketing.data}
                             </h2>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 
